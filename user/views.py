@@ -59,6 +59,6 @@ class UserDetail(APIView):
           
   
     def delete(self, request, format=None):
-        contients = self.get_object(request.data['email'])
-        contients.delete()
+        users = self.get_object(request.data['email'])
+        users.delete()
         return Response({'Status':'Deleted'}, status=status.HTTP_200_OK)
