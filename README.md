@@ -6,7 +6,7 @@
 #### Database : SQL Lite
 #### Reverse Proxy: Nginx
 #### WSGI application server : Gunicorn
-#### Postman Collection: https://www.getpostman.com/collections/ff90e94c43b8728cff30
+#### Postman Collection: https://github.com/Jeevan5955/User-CRUD-DRF/blob/main/DRF-CRUD.postman_collection.json
 
 ## Validation:
 
