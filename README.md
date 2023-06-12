@@ -31,6 +31,19 @@ Example:
             model = Movie
             fields = '__all__'
             
+## Authentication and Authorization
+
+Token Authentication using DRF
+
+Token authentication refers to exchanging username and password for a token that will be used in all subsequent requests so to identify the user on the server side.
+
+`
+curl --location 'http://127.0.0.1:8025/api-token-auth/' \
+--data '{
+    "username":"jeevan",
+    "password":"jeevan5955"
+}'
+`
 
 ## Installation:
 
