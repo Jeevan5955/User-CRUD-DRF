@@ -1,4 +1,6 @@
-# Geographical-Vector
+# User CRUD
+
+For better scalability Pub-Sub architecture design is used in this project
 
 #### Framework: Django Rest Framework
 #### Message Broker: RabbitMQ
