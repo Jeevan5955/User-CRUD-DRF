@@ -1,0 +1,22 @@
+upstream vector {
+    server 127.0.0.1:8000;
+    server 127.0.0.1:8001;
+    server 127.0.0.1:8002;
+}
+
+server {
+        listen 80;
+        server_name www.domain.com ;
+        proxy_set_header Access-Control-Allow-Origin *;
+
+        location / {
+            proxy_pass http://vector;
+            proxy_set_header "Access-Control-Allow-Origin" *;
+            proxy_set_header "Access-Control-Allow-Methods" "GET, POST, OPTIONS, HEAD, DELETE";
+            proxy_set_header "Access-Control-Allow-Headers" "Authorization, Origin, X-Requested-With, Content-Type, Accept";
+            proxy_set_header   X-Real-IP $remote_addr;
+            proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header   X-Forwarded-Host $server_name;
+            #proxy_set_header   X-Forwarded-Proto https;
+        }
+}

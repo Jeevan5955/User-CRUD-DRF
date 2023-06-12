@@ -10,10 +10,16 @@
 			"name": "Create",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 6b4d93c432a4d850c4e62cdb81f525b48be0e3f3",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\":\"Jeevan\",\n    \"email\": \"njeevan10@gmail.com\",\n    \"mobileNumber\": 8884974479,\n    \"age\":24,\n    \"height\":168\n\n}",
+					"raw": "{\n    \"name\":\"Jeevan\",\n    \"email\": \"njeevan10@gmail.com\",\n    \"mobileNumber\": 8884974479,\n    \"age\":\"24\",\n    \"height\":168,\n    \"profilePicture\":\"https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U\"\n\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -41,10 +47,16 @@
 					"name": "Create",
 					"originalRequest": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 6b4d93c432a4d850c4e62cdb81f525b48be0e3f3",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\":\"Jeevan\",\n    \"email\": \"njeevan10@gmail.com\",\n    \"mobileNumber\": 8884974479,\n    \"age\":24,\n    \"height\":168\n\n}",
+							"raw": "{\n    \"name\":\"Jeevan\",\n    \"email\": \"njeevan10@gmail.com\",\n    \"mobileNumber\": 8884974479,\n    \"age\":\"24\",\n    \"height\":168,\n    \"profilePicture\":\"https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U\"\n\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -73,7 +85,262 @@
 					"header": [
 						{
 							"key": "Date",
-							"value": "Tue, 23 May 2023 11:53:41 GMT"
+							"value": "Mon, 12 Jun 2023 07:36:07 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "211"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"email\": \"njeevan10@gmail.com\",\n    \"name\": \"Jeevan\",\n    \"mobileNumber\": 8884974479,\n    \"age\": 24,\n    \"height\": 168,\n    \"profilePicture\": \"https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U\"\n}"
+				},
+				{
+					"name": "Create-Validation for Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 6b4d93c432a4d850c4e62cdb81f525b48be0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Jeevan\",\n    \"email\": \"njeevan10@gmail.com\",\n    \"mobileNumber\": 8884974479,\n    \"age\":\"24\",\n    \"height\":168,\n    \"profilePicture\":\"https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8025/user/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8025",
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 12 Jun 2023 07:38:19 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "WWW-Authenticate",
+							"value": "Token"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "58"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"detail\": \"Authentication credentials were not provided.\"\n}"
+				},
+				{
+					"name": "Create-Invalid Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 6b4d93c432a4d850c4e62cdb81f525b48be0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Jeevan\",\n    \"email\": \"njeevan10@gmail.com\",\n    \"mobileNumber\": 8884974479,\n    \"age\":\"24\",\n    \"height\":168,\n    \"profilePicture\":\"https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8025/user/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8025",
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 12 Jun 2023 07:37:50 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "WWW-Authenticate",
+							"value": "Token"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"detail\": \"Invalid token.\"\n}"
+				},
+				{
+					"name": "Create-Validation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Jeevan\",\n    \"email\": \"njeevan10@gmail.com\",\n    \"mobileNumber\": 8884974479,\n    \"age\":\"24\",\n    \"height\":168\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8025/user/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8025",
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 12 Jun 2023 07:09:30 GMT"
 						},
 						{
 							"key": "Server",
@@ -97,7 +364,7 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "95"
+							"value": "46"
 						},
 						{
 							"key": "X-Content-Type-Options",
@@ -113,7 +380,91 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"email\": \"njeevan10@gmail.com\",\n    \"name\": \"Jeevan\",\n    \"mobileNumber\": 8884974479,\n    \"age\": 24,\n    \"height\": 168\n}"
+					"body": "{\n    \"profilePicture\": [\n        \"This field is required.\"\n    ]\n}"
+				},
+				{
+					"name": "Create-Email Validation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 6b4d93c432a4d850c4e62cdb81f525b48be0e3f3",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Jeevan\",\n    \"email\": \"njeevan\",\n    \"mobileNumber\": 8884974479,\n    \"age\":\"24\",\n    \"height\":168,\n    \"profilePicture\":\"https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8025/user/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8025",
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 12 Jun 2023 07:11:08 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"email\": [\n        \"Enter a valid email address.\"\n    ]\n}"
 				}
 			]
 		},
@@ -124,7 +475,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\":\"Jeevann\",\n    \"email\": \"njeevan10@gmail.com\",\n    \"mobileNumber\": 8884974479,\n    \"age\":24,\n    \"height\":168\n\n}",
+					"raw": "{\n    \"name\":\"Jeevann\",\n    \"email\": \"njeevan10@gmail.com\",\n    \"mobileNumber\": 8884974479,\n    \"age\":24,\n    \"height\":168,\n    \"profilePicture\":\"https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U\"\n\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -149,13 +500,103 @@
 			},
 			"response": [
 				{
-					"name": "Update-Put",
+					"name": "Update-Put-Validation",
 					"originalRequest": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 6b4d93c432a4d850c4e62cdb81f525b48be0e3f3",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n    \"name\":\"Jeevann\",\n    \"email\": \"njeevan10@gmail.com\",\n    \"mobileNumber\": 8884974479,\n    \"age\":24,\n    \"height\":168\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8025/user/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8025",
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 12 Jun 2023 07:16:50 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"profilePicture\": [\n        \"This field is required.\"\n    ]\n}"
+				},
+				{
+					"name": "Update-Put",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 6b4d93c432a4d850c4e62cdb81f525b48be0e3f3",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Jeevann\",\n    \"email\": \"njeevan10@gmail.com\",\n    \"mobileNumber\": 8884974479,\n    \"age\":24,\n    \"height\":168,\n    \"profilePicture\":\"https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U\"\n\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -184,7 +625,7 @@
 					"header": [
 						{
 							"key": "Date",
-							"value": "Tue, 23 May 2023 12:02:12 GMT"
+							"value": "Mon, 12 Jun 2023 07:17:29 GMT"
 						},
 						{
 							"key": "Server",
@@ -232,7 +673,13 @@
 			"name": "Update-Patch",
 			"request": {
 				"method": "PATCH",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 6b4d93c432a4d850c4e62cdb81f525b48be0e3f3",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\n    \"name\":\"Jeevan\",\n    \"email\": \"njeevan10@gmail.com\",\n    \"mobileNumber\": 8884974479,\n    \"age\":24,\n    \"height\":168\n\n}",
@@ -263,7 +710,13 @@
 					"name": "Update-Patch",
 					"originalRequest": {
 						"method": "PATCH",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 6b4d93c432a4d850c4e62cdb81f525b48be0e3f3",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n    \"name\":\"Jeevan\",\n    \"email\": \"njeevan10@gmail.com\",\n    \"mobileNumber\": 8884974479,\n    \"age\":24,\n    \"height\":168\n\n}",
@@ -295,7 +748,7 @@
 					"header": [
 						{
 							"key": "Date",
-							"value": "Tue, 23 May 2023 12:02:24 GMT"
+							"value": "Mon, 12 Jun 2023 07:18:51 GMT"
 						},
 						{
 							"key": "Server",
@@ -374,7 +827,13 @@
 					"name": "Delete",
 					"originalRequest": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 6b4d93c432a4d850c4e62cdb81f525b48be0e3f3",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n    \"email\": \"njeevan10@gmail.com\"\n}",
@@ -406,7 +865,7 @@
 					"header": [
 						{
 							"key": "Date",
-							"value": "Tue, 23 May 2023 12:03:57 GMT"
+							"value": "Mon, 12 Jun 2023 07:35:21 GMT"
 						},
 						{
 							"key": "Server",
@@ -418,7 +877,7 @@
 						},
 						{
 							"key": "Vary",
-							"value": "Accept, Cookie"
+							"value": "Accept"
 						},
 						{
 							"key": "Allow",
@@ -488,7 +947,13 @@
 					"name": "Get",
 					"originalRequest": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 6b4d93c432a4d850c4e62cdb81f525b48be0e3f3",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
@@ -520,7 +985,7 @@
 					"header": [
 						{
 							"key": "Date",
-							"value": "Tue, 23 May 2023 11:56:19 GMT"
+							"value": "Mon, 12 Jun 2023 07:34:24 GMT"
 						},
 						{
 							"key": "Server",
@@ -532,7 +997,7 @@
 						},
 						{
 							"key": "Vary",
-							"value": "Accept, Cookie"
+							"value": "Accept"
 						},
 						{
 							"key": "Allow",
@@ -544,7 +1009,7 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "97"
+							"value": "117"
 						},
 						{
 							"key": "X-Content-Type-Options",
@@ -560,7 +1025,114 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"email\": \"njeevan10@gmail.com\",\n        \"name\": \"Jeevan\",\n        \"mobileNumber\": 8884974479,\n        \"age\": 24,\n        \"height\": 168\n    }\n]"
+					"body": "[\n    {\n        \"email\": \"njeevan10@gmail.com\",\n        \"name\": \"Jeevan\",\n        \"mobileNumber\": 8884974479,\n        \"age\": 24,\n        \"height\": 168,\n        \"profilePicture\": \"\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Access Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"jeevan\",\n    \"password\":\"jeevan5955\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8025/api-token-auth/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8025",
+					"path": [
+						"api-token-auth",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Access Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"jeevan\",\n    \"password\":\"jeevan5955\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8025/api-token-auth/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8025",
+							"path": [
+								"api-token-auth",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 12 Jun 2023 07:43:37 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "52"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"6b4d93c432a4d850c4e62cdb81f525b48be0e3f3\"\n}"
 				}
 			]
 		}
