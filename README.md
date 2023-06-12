@@ -54,9 +54,9 @@ Example:
 
 ##### iii) `python manage.py migrate`
 
-##### iv) `python manage.py runserver`
+##### iv) `python manage.py runserver 8025`
 
-##### v) `Open: http://127.0.0.1:8000/ `
+##### v) `Open: http://127.0.0.1:8025/ `
 
 #### Check the status to make sure everything is running smooth:
 
@@ -68,6 +68,8 @@ Example:
 
 
 ## Database Schema:
+
+![User Scheme](https://github.com/Jeevan5955/User-CRUD-DRF/assets/54932235/babc3426-703c-4780-8cc5-80ccbcb30bba)
 
 
 ## Deployment :
@@ -249,6 +251,7 @@ Nginx Deployment Documentation: [Nginx deployment documentation.pdf](https://git
 
 ## Complete production architecture:
 
+![User Flow Diagram](https://github.com/Jeevan5955/User-CRUD-DRF/assets/54932235/4529bc4e-6eac-4c93-818a-f92b8db8fb1c)
 
 #### Reference: 
 
